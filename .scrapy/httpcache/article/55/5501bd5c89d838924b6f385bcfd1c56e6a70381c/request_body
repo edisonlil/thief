@@ -1,0 +1,8 @@
+{
+    "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en",
+        "User-Agent": "Scrapy/2.5.0 (+https://scrapy.org)"
+    },
+    "url": "https://www.xuexi.cn/lgpage/detail/index.html?id=11791238774882856757&item_id=11791238774882856757"
+}

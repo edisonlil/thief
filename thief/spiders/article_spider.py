@@ -64,7 +64,7 @@ class ArticleSpider(RabbitSpider):
     #     pass
 
 
-
+    #https://gw-proxy-api.xuexi.cn/v1/api/exchangeAuthUrl
 
     def parse(self, response):
 
