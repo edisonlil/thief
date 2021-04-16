@@ -7,7 +7,7 @@ from scrapy_rabbitmq_scheduler.spiders import RabbitSpider
 from scrapy_splash import SplashRequest
 
 from thief.items.article import Article
-from thief.lib.http_kit import random_user_agent
+from thief.lib.httpd import random_user_agent
 from thief.parser.spider_parser import spider_parser_factory
 
 

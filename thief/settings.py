@@ -51,6 +51,8 @@ HTTPCACHE_STORAGE = 'scrapy_splash.SplashAwareFSCacheStorage'
 """
 ITEM_PIPELINES = {
     "thief.pipelines.acticle_pipeline.ActiclePipeline":300
+    # 指定item处理方式, item会加入到rabbitmq中
+    #'scrapy_rabbitmq_scheduler.pipelines.RabbitmqPipeline': 300,
 }
 
 """
@@ -93,6 +95,9 @@ HTTPCACHE_STORAGE = "scrapy.extensions.httpcache.FilesystemCacheStorage"
 SCHEDULER = "scrapy_rabbitmq_scheduler.scheduler.SaaS"
 
 # 指定rabbitmq的连接DSN
-# amqp_url="amqp://username:password@ip:port/"
 RABBITMQ_CONNECTION_PARAMETERS = 'amqp://root:123@115.159.157.148:5672/'
 
+
+# 指定重试的http状态码(重新加回队列重试)
+# 如果结果的状态码位该list其中一个则会重试
+# SCHEDULER_REQUEUE_ON_STATUS = [500]
