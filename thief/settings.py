@@ -28,6 +28,8 @@ DOWNLOADER_MIDDLEWARES = {
     'scrapy_splash.SplashCookiesMiddleware': 723,
     'scrapy_splash.SplashMiddleware': 725,
     'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810,
+    # 指定下载器中间件, 确认任务是否成功
+    'scrapy_rabbitmq_scheduler.middleware.RabbitMQMiddleware': 999,
 }
 
 """
@@ -85,3 +87,12 @@ HTTPCACHE_IGNORE_HTTP_CODES = [404,500]
 默认： 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 """
 HTTPCACHE_STORAGE = "scrapy.extensions.httpcache.FilesystemCacheStorage"
+
+
+# 指定项目的调度器
+SCHEDULER = "scrapy_rabbitmq_scheduler.scheduler.SaaS"
+
+# 指定rabbitmq的连接DSN
+# amqp_url="amqp://username:password@ip:port/"
+RABBITMQ_CONNECTION_PARAMETERS = 'amqp://root:123@115.159.157.148:5672/'
+

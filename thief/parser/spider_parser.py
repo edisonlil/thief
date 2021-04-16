@@ -43,7 +43,6 @@ class SpiderParser:
 
 from lxml import etree
 
-
 """
 Html 爬虫解析器
 """
