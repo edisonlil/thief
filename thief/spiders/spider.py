@@ -17,7 +17,7 @@ import umsgpack
 
 
 
-class ArticleSpider(RabbitSpider):
+class ThiefSpider(RabbitSpider):
 
 
     #allowed_domains = "baidu.com"

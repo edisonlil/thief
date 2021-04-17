@@ -50,7 +50,7 @@ HTTPCACHE_STORAGE = 'scrapy_splash.SplashAwareFSCacheStorage'
 管道:优先级(值越高优先级越低)   
 """
 ITEM_PIPELINES = {
-    "thief.pipelines.acticle_pipeline.ActiclePipeline":300
+    "thief.pipelines.pipeline.ThiefPipeline":300
     # 指定item处理方式, item会加入到rabbitmq中
     #'scrapy_rabbitmq_scheduler.pipelines.RabbitmqPipeline': 300,
 }
