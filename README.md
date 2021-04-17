@@ -12,7 +12,7 @@ Thief作为公司自己研发的通用爬虫框架，主要为了帮助运营人
 
 Thief采用Python作为开发语言,基础框架则使用Python中的Scrapy爬虫框架作为实现。
 
-#### 1.Scrap 的大致了解
+#### Scrap 的大致了解
 
 Scrap整体架构图如下:
 
