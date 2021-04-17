@@ -48,13 +48,13 @@ Scrap整体架构图如下:
 * 支持JSON/XML/二进制格式 。
   
 
-* 数据源通过`RabbitMQ`进行读取,并实时转换。
+* 数据源通过RabbitMQ进行读取，并实时转换。
   
 
 * 支持爬取JS动态渲染(或ajax)的页面。
 
 
-* 支持多种保存策略,如将数据保存在`File`,`Mysql`,`MongoDB`,`Redis`,`RabbitMQ`队列中。(目前只支持`RabbitMQ`)。
+* 支持多种保存策略,如将数据保存在File，Mysql，MongoDB，Redis，RabbitMQ队列中。(目前只支持RabbitMQ)。
 
 
 ### 后续可能会支持的特性(当前版本没有)
