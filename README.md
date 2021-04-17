@@ -16,7 +16,8 @@ Thief采用Python作为开发语言,基础框架则使用Python中的Scrapy爬�
 
 Scrap整体架构图如下:
 
-![https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fupload-images.jianshu.io%2Fupload_images%2F13008339-aa77de178998e3a4.png&refer=http%3A%2F%2Fupload-images.jianshu.io&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1621230728&t=d9493e9bb998d2dbe5997fd236621cc9](img.png)
+![avatar](./img.png)
+
 
 其流程可以描述如下：
 
