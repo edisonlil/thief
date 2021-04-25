@@ -1,7 +1,7 @@
-import json
+
 import pickle
 
-import scrapy
+
 from scrapy.utils.reqser import request_from_dict
 from scrapy_rabbitmq_scheduler.spiders import RabbitSpider
 from scrapy_splash import SplashRequest
@@ -10,8 +10,6 @@ from thief.items.article import Article
 from thief.lib.httpd import random_user_agent
 from thief.parser.spider_parser import spider_parser_factory
 
-
-import umsgpack
 
 
 
