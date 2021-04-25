@@ -54,12 +54,7 @@ class ThiefSpider(RabbitSpider):
         return request
 
         pass
-    #
-    # def start_requests(self):
-    #
-    #     for url in self.start_urls:
-    #         yield SplashRequest(url=url, callback=self.parse, headers= self.headers)
-    #     pass
+
 
 
     #https://gw-proxy-api.xuexi.cn/v1/api/exchangeAuthUrl
