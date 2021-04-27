@@ -70,12 +70,22 @@ class JSONSpiderParser(SpiderParser):
 
 
     def __init__(self,text):
-        SpiderParser.__init__(self,json.dump(json))
+        SpiderParser.__init__(self,json.loads(text))
         pass
 
     """
         获取key值
     """
     def parse_rule(self,rule):
-        return self.text[rule]
+
+        if len(rule) == 0:
+            return self.text
+
+        keys = rule.split(".")
+        resule = self.text
+
+        for key in keys:
+            resule = resule[key]
+
+        return resule
     pass
